@@ -9,17 +9,17 @@ sap.ui.define([
 
 	return Controller.extend("sap.ui.demo.todo.controller.App", {
 
-		onInit: function() {
+		onInit: function() {                             
 			this.aSearchFilters = [];
 			this.aTabFilters = [];
 
-			this.getView().setModel(new JSONModel({
+			this.getView().setModel(new JSONModel({       
 				isMobile: Device.browser.mobile,
 				filterText: undefined
 			}), "view");
 		},
 
-		/**
+		/**              
 		 * Adds a new todo item to the bottom of the list.
 		 */
 		addTodo: function() {
